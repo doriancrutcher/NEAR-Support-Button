@@ -1,0 +1,140 @@
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #706F6C;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.close-button:focus,
+.close-button:hover {
+  color: #FF0000;
+}
+
+.help-button {
+  align-items: center;
+  background-color: #161615;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.2s;
+  width: 60px;
+}
+
+.help-button-container {
+  bottom: 20px;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+}
+
+.help-button:hover {
+  transform: scale(1.1);
+}
+
+.help-button img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.help-form {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.help-form-container {
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  bottom: 100px;
+  display: none;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+}
+
+.help-form-container.show {
+  display: block;
+}
+
+.help-form h2 {
+  font-family: 'helvetica';
+  font-style: normal;
+  margin-top: 0;
+  text-align: center;
+}
+
+.help-form input,
+.help-form textarea {
+  border: 1px solid #E3E3E0;
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  flex: none;
+  flex-grow: 0;
+
+  order: 1;
+
+  font-family: 'Mona-Sans', sans-serif;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  width: 292px;
+  background: #FDFDFC;
+  align-self: stretch;
+  gap: 8px;
+
+
+}
+
+.help-form label {
+  align-items: flex-end;
+  display: flex;
+  font-family: 'Mona Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-family: 'Mona-Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+
+.help-form button {
+  align-items: center;
+  font-family: 'Mona-Sans', sans-serif;
+font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+
+  background-color: #161615;
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  gap: 8px;
+  height: 48px;
+  justify-content: center;
+
+  padding: 8px 24px;
+  width: 292px;
+
+}
