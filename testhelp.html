@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Help Button</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/mona-sans");
+    </style>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=FK+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <script src="testhelp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="help-button-container">
+      <button class="help-button">
+        <img src="./assets/icon_rev.png" alt="button icon" />
+      </button>
+      <div class="help-form-container">
+        <button class="close-button">&times;</button>
+        <form class="help-form">
+          <h2>Need Help?</h2>
+          <label for="name">Near Account:</label>
+          <input placeholder="john doe" type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="description">Description:</label>
+          <textarea id="description" name="description"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      const closeButton = document.querySelector(".close-button");
+      const helpFormContainer = document.querySelector(".help-form-container");
+
+      closeButton.addEventListener("click", function () {
+        helpFormContainer.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>

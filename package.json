@@ -1,0 +1,23 @@
+{
+  "name": "custombutton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodeSupport.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doriancrutcher/CustomHelpButton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doriancrutcher/CustomHelpButton/issues"
+  },
+  "homepage": "https://github.com/doriancrutcher/CustomHelpButton#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.9"
+  }
+}
